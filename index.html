@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roazh Site</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: white;
+    }
+
+    header {
+      padding: 60px 20px;
+      text-align: center;
+      background: linear-gradient(135deg, #1e293b, #0f172a);
+    }
+
+    header h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      color: #94a3b8;
+      font-size: 18px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    .card {
+      background: #111827;
+      padding: 25px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+
+    .card h2 {
+      margin-top: 0;
+      color: #38bdf8;
+    }
+
+    .info {
+      line-height: 1.8;
+      color: #cbd5e1;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      margin-top: 10px;
+      border-radius: 8px;
+      border: none;
+      outline: none;
+      font-size: 14px;
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 12px;
+      width: 100%;
+      background: #38bdf8;
+      border: none;
+      color: black;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 8px;
+    }
+
+    button:hover {
+      background: #0ea5e9;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #64748b;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Roazh Site</h1>
+  <p>Un site simple, clair et efficace pour nous contacter</p>
+</header>
+
+<div class="container">
+
+  <div class="card">
+    <h2>À propos</h2>
+    <div class="info">
+      Nous développons une activité simple et accessible, avec un objectif clair : faciliter la mise en relation et les demandes de contact.
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Contact</h2>
+    <div class="info">
+      Email : marc@roazh.com<br>
+      Téléphone : +33 6 31 27 24 96
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Nous contacter</h2>
+
+    <!-- IMPORTANT : remplace l'URL Formspree ci-dessous -->
+    <form action="https://formspree.io/f/xojbjjrp" method="POST">
+
+      <input type="text" name="name" placeholder="Nom et prénom" required>
+
+      <input type="email" name="email" placeholder="Email" required>
+
+      <textarea name="message" rows="5" placeholder="Votre message"></textarea>
+
+      <button type="submit">Envoyer</button>
+    </form>
+
+  </div>
+
+</div>
+
+<footer>
+  © Roazh Site - Tous droits réservés
+</footer>
+
+</body>
+</html>
