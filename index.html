@@ -3,136 +3,106 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Roazh Site</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0f172a;
-      color: white;
-    }
+  <title>ROAZH - Matières premières & lait</title>
 
-    header {
-      padding: 60px 20px;
-      text-align: center;
-      background: linear-gradient(135deg, #1e293b, #0f172a);
-    }
+  <meta name="description" content="ROAZH - Matières premières, lait et solutions agricoles premium.">
 
-    header h1 {
-      font-size: 42px;
-      margin-bottom: 10px;
-    }
-
-    header p {
-      color: #94a3b8;
-      font-size: 18px;
-    }
-
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 40px 20px;
-    }
-
-    .card {
-      background: #111827;
-      padding: 25px;
-      border-radius: 12px;
-      margin-bottom: 20px;
-    }
-
-    .card h2 {
-      margin-top: 0;
-      color: #38bdf8;
-    }
-
-    .info {
-      line-height: 1.8;
-      color: #cbd5e1;
-    }
-
-    input, textarea {
-      width: 100%;
-      padding: 12px;
-      margin-top: 10px;
-      border-radius: 8px;
-      border: none;
-      outline: none;
-      font-size: 14px;
-    }
-
-    button {
-      margin-top: 15px;
-      padding: 12px;
-      width: 100%;
-      background: #38bdf8;
-      border: none;
-      color: black;
-      font-weight: bold;
-      cursor: pointer;
-      border-radius: 8px;
-    }
-
-    button:hover {
-      background: #0ea5e9;
-    }
-
-    footer {
-      text-align: center;
-      padding: 30px;
-      color: #64748b;
-      font-size: 14px;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header>
-  <h1>Roazh Site</h1>
-  <p>Un site simple, clair et efficace pour nous contacter</p>
+
+  <div class="hero">
+
+    <img src="logo-roazh.png" class="logo">
+
+    <h1>ROAZH</h1>
+
+    <p>
+      Matières premières, lait et solutions agricoles premium,
+      avec une approche basée sur la qualité, la confiance
+      et une vision internationale.
+    </p>
+
+    <div class="cta">
+      <a href="#contact">Nous contacter</a>
+    </div>
+
+  </div>
+
 </header>
 
-<div class="container">
+<section class="fade">
 
-  <div class="card">
-    <h2>À propos</h2>
-    <div class="info">
-      Nous développons une activité simple et accessible, avec un objectif clair : faciliter la mise en relation et les demandes de contact.
+  <div class="container">
+
+    <div class="grid">
+
+      <div class="card">
+        <h3>Qualité</h3>
+        <p>
+          Une sélection rigoureuse de matières premières
+          et de produits agricoles répondant à des standards élevés.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Confiance</h3>
+        <p>
+          Une relation durable basée sur la transparence,
+          l’écoute et la fiabilité des échanges.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Vision internationale</h3>
+        <p>
+          Une activité tournée vers les opportunités mondiales,
+          avec une approche moderne et structurée.
+        </p>
+      </div>
+
     </div>
+
   </div>
 
-  <div class="card">
+</section>
+
+<section class="contact-section fade" id="contact">
+
+  <div class="container">
+
     <h2>Contact</h2>
-    <div class="info">
-      Email : marc@roazh.com<br>
-      Téléphone : +33 6 31 27 24 96
-    </div>
-  </div>
 
-  <div class="card">
-    <h2>Nous contacter</h2>
-
-    <!-- IMPORTANT : remplace l'URL Formspree ci-dessous -->
     <form action="https://formspree.io/f/xojbjjrp" method="POST">
 
-      <input type="text" name="name" placeholder="Nom et prénom" required>
+      <input type="text" name="Nom" placeholder="Nom et prénom" required>
 
-      <input type="email" name="email" placeholder="Email" required>
+      <input type="email" name="Email" placeholder="Adresse email" required>
 
-      <textarea name="message" rows="5" placeholder="Votre message"></textarea>
+      <textarea name="Message" rows="6" placeholder="Votre message"></textarea>
 
       <button type="submit">Envoyer</button>
+
     </form>
 
   </div>
 
-</div>
+</section>
 
 <footer>
-  © Roazh Site - Tous droits réservés
+
+  Contact :
+  marc@roazh.com
+  ·
+  +33 6 31 27 24 96
+
 </footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
